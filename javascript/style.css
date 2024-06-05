@@ -1,0 +1,92 @@
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+ }
+ .Home{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    border: transparent
+ }
+ a{
+    text-decoration: none;
+ }
+.home_h{
+    background: linear-gradient(90deg , #00ffff, #ff00c3 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+
+
+
+.ring{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ring #i{
+    position: absolute;
+    inset: 0;
+    border: 2px solid #be0101;
+}
+.ring #i1{
+    position: absolute;
+    inset: 0;
+    border: 2px solid #07d618;
+}
+.ring #i2{
+    position: absolute;
+    inset: 0;
+    border: 2px solid #ece930;
+}
+
+
+
+
+.ring .i:nth-child(1){
+    border-radius: 38% 62% 63% 37%/ 41% 44% 56%;
+    animation: animate 6s linearinfinite;
+}
+.ring .i:nth-child(2){
+    border-radius: 41% 46% 56% 59%/ 38% 62% 63% 37%;
+    animation: animate 4s linear infinite;
+}
+.ring .i:nth-child(3){
+    border-radius: 38% 62% 63% 37%/ 41% 44% 56%;
+    animation: animate2 10s linear infinite;
+}
+.ring:hover .i{
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate{
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+}
+@keyframes animate2{
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    } 
+}
